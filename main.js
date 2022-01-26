@@ -12,26 +12,50 @@ prev.addEventListener("click", ()=>{
     if(slideIndex >0){
         postion += IMAGE_WIDTH;
         slide.style.transform = `translateX(${postion}px)`;
+        slide.style.transition = "1s";
         slideIndex--;
     }
     else if(slideIndex <=0){
-        return -1;
+        postion = -1500;
+        slideIndex = 3;
+        slide.style.transform = `translateX(${postion}px)`;
+        slide.style.transition = "1s";
     }
-    console.log(slideIndex);
 });
 next.addEventListener("click",()=>{
-    console.log(slideIndex);
     if(slideIndex<3){
         postion -= IMAGE_WIDTH;
         slide.style.transform = `translateX(${postion}px)`;
+        slide.style.transition = "1s";
         slideIndex++;
     }
     else if(slideIndex >=3){
-        return -1;
+        postion = 0;
+        slideIndex = 0;
+        slide.style.transform = `translateX(${postion}px)`;
+        slide.style.transition = "1s";
     }
     
-    
 });
+
+
+function autoSlide(){
+    if(slideIndex<3){
+        postion -= IMAGE_WIDTH;
+        slide.style.transform = `translateX(${postion}px)`;
+        slide.style.transition = "1s";
+        slideIndex++;
+    }
+    else if(slideIndex >=3){
+        postion = 0;
+        slideIndex = 0;
+        slide.style.transform = `translateX(${postion}px)`;
+        slide.style.transition = "1s";
+    }
+}
+
+autoSlide();
+setInterval(autoSlide,3000);
 
 
 
