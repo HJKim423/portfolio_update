@@ -11,14 +11,18 @@
     <link rel="icon" type="image/png" href="imgs/favicon.png" />
     <script src="https://kit.fontawesome.com/9eb162ac0d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
-    <!--<link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <link href="https://fonts.googleapis.com/earlyaccess/jejugothic.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
+
+
+
 </head>
 
 <body>
@@ -48,8 +52,8 @@
                 <img src="imgs/프사.jpg" alt="HJ's profile photo" class="home__avatar">
 
 
-                <h1 class="home__title">Hello, <br> I'm Dream Coder</h1>
-                <h2 class="home__description">I'm studying front-end develop. </h2>
+                <h1 class="home__title">안녕하세요, <br> 김호정의 포트폴리오입니다.</h1>
+                <h2 class="home__description">프론트엔드 개발을 공부중입니다. </h2>
                 <button class="home__contact">CONTACT ME</button>
             </div>
         </section>
@@ -58,57 +62,46 @@
     <!-- About -->
     <section id="about" class="section section__container">
         <h1>About me</h1>
-        <p>프론트엔드를 공부중입니다.</p>
         <div class="about__majors">
             <div class="major">
                 <div class="major__icon">
-                    <i class="fab fa-html5"></i>
+                    <i class="fas fa-solid fa-user"></i>
                 </div>
-                <h2 class="major__title">Front-end</h2>
+                <h2 class="major__title">이름&생년월일</h2>
                 <p class="major__description">
-                    HTML, CSS, JavaScript, TypeScript,
-                    <br />React, Vue, Web APIs
+                    김호정
+                    <br />99.04.23
                 </p>
             </div>
             <div class="major">
                 <div class="major__icon">
                     <i class="fas fa-mobile"></i>
                 </div>
-                <h2 class="major__title">Mobile</h2>
+                <h2 class="major__title">연락처&이메일</h2>
                 <p class="major__description">
-                    Android, iOS, React Native, Flutter,
-                    <br />Java, Swift, Kotlin
-                </p>
+                    010-2280-5960
+                    <br />pknojlh27@naver.com
             </div>
             <div class="major">
                 <div class="major__icon">
-                    <i class="fas fa-server"></i>
+                    <i class="fas fa-solid fa-school"></i>
                 </div>
-                <h2 class="major__title">Back-end</h2>
+                <h2 class="major__title">주소지&학력</h2>
                 <p class="major__description">
-                    Java, JavaScript, Go, NodeJS,
-                    <br />Rest APIs, GraphGL
+                    경기도 부천시
+                    <br />가톨릭대학교 재학
                 </p>
             </div>
         </div>
 
-        <ul class="about__career">
-            <li>
-                <img src="imgs/cuk.jpg" alt="">
-                <div class="school">
-                    <p class="school__name">The Catholic University of Korea</p>
-                    <p class="school_period">2019.03 ~</p>
-                </div>
-            </li>
-            
-        </ul>
+    
     </section>
 
     <!-- Skills -->
     <section id="skills" class="section">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
-        <p>Experience with all phrases of the software life-cycle. Passion for learning new technologies.</p>
+        <p></p>
 
         <div class="skillset">
             <div class="skillset__left">
@@ -118,6 +111,15 @@
                         <li>
                             <div class="nameAndPer">
                                 <div class="name">HTML</div>
+                                <div class="per">70%</div>
+                            </div>
+                            <div class="chart__bar">
+                                <div class="chart__value" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nameAndPer">
+                                <div class="name">CSS</div>
                                 <div class="per">50%</div>
                             </div>
                             <div class="chart__bar">
@@ -126,7 +128,7 @@
                         </li>
                         <li>
                             <div class="nameAndPer">
-                                <div class="name">CSS</div>
+                                <div class="name">JAVASCRIPT</div>
                                 <div class="per">30%</div>
                             </div>
                             <div class="chart__bar">
@@ -135,7 +137,7 @@
                         </li>
                         <li>
                             <div class="nameAndPer">
-                                <div class="name">JAVASCRIPT</div>
+                                <div class="name">REACT</div>
                                 <div class="per">5%</div>
                             </div>
                             <div class="chart__bar">
@@ -145,15 +147,6 @@
                         <li>
                             <div class="nameAndPer">
                                 <div class="name">TYPESCRIPT</div>
-                                <div class="per">0%</div>
-                            </div>
-                            <div class="chart__bar">
-                                <div class="chart__value" style="width: 0%;"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nameAndPer">
-                                <div class="name">REACT</div>
                                 <div class="per">0%</div>
                             </div>
                             <div class="chart__bar">
@@ -177,10 +170,11 @@
                 <div class="tools">
                     <h3 class="skillset__title">Tools</h3>
                     <ul class="tools__list">
+                        <li><span></span></li>
+                        <li><span></span></li>
                         <li><span>Visual Studio Code</span></li>
-                        <li><span>Adobe photoshop</span></li>
-                        <li><span>Adobe Illustrator</span></li>
-                        <li><span>Sketch up</span></li>
+                        <li><span></span></li>
+                        <li><span></span></li>
                     </ul>
                 </div>
 
@@ -248,7 +242,7 @@
     <section id="testimonials" class="section">
         <div class="section__container">
             <h1>Testimonials</h1>
-            <h3>See what they say about me</h3>
+            <h3></h3>
 
             <ul class="testi__people">
                 <li class="testi__avatar">
@@ -257,7 +251,7 @@
                     </div>
 
                     <div class="testi__speach-bubble">
-                        <p>최고야df
+                        <p>추가예정
                         </p>
                         <p class="name"><a href="">JunHo</a>/JYP</p>
                     </div>
@@ -266,7 +260,7 @@
 
 
                     <div class="testi__speach-bubble">
-                        <p>최고야</p>
+                        <p>추가예정</p>
                         <p class="name"><a href="">JunHo</a>/JYP</p>
                     </div>
                     <div class="testi__avatar__img">
@@ -285,7 +279,7 @@
         <h2 class="contact__email">pknojlh27@naver.com</h2>
         <div class="contact__links">
             <a href="https://github.com/HJKim423" target="_blank" class="github"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.notion.so/ea455d8001944efba9e90fbf882dd608?v=16f2da6661ee475991339551760da96e" target="_blank" class="notion"><i class="fab fa-brands fa-blogger-b"></i></a>
         </div>
         <div class="contact__rights">2020 Dream Coding Ellie - All rights reserved</div>
     </section>
