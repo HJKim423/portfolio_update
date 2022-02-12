@@ -4,9 +4,10 @@
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
 let postion = 0;
-const IMAGE_WIDTH = 500;
+const IMAGE_WIDTH = 800;
 const slide = document.querySelector(".slide");
 let slideIndex = 0;
+
 
 prev.addEventListener("click", ()=>{
     if(slideIndex >0){
@@ -16,7 +17,7 @@ prev.addEventListener("click", ()=>{
         slideIndex--;
     }
     else if(slideIndex <=0){
-        postion = -1500;
+        postion = -2400;
         slideIndex = 3;
         slide.style.transform = `translateX(${postion}px)`;
         slide.style.transition = "1s";
@@ -52,10 +53,21 @@ function autoSlide(){
         slide.style.transform = `translateX(${postion}px)`;
         slide.style.transition = "1s";
     }
+
+    
 }
+slide.addEventListener("mouseover", ()=>{
+    clearInterval(interval);
+    console.log("on");
+})
+
+slide.addEventListener("mouseout", ()=>{
+    interval= setInterval(autoSlide,3000);
+    console.log("out");
+})
 
 autoSlide();
-setInterval(autoSlide,3000);
+let interval = setInterval(autoSlide,3000);
 
 
 
